@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms & Suites - Golden Palm Resort</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        .room-row {
+            margin-bottom: 4rem;
+        }
+        .room-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+        .room-details h3 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+        }
+        .room-facilities-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+        .room-facilities-list li {
+            margin-bottom: 0.8rem;
+        }
+        .price-label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--text-muted);
+            margin-bottom: 0.2rem;
+        }
+        .price-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            font-family: var(--font-heading);
+            color: var(--primary-color);
+        }
+        .offer-card {
+            border: 1px solid var(--border-color);
+            padding: 2rem;
+            border-radius: 8px;
+            height: 100%;
+            transition: all 0.3s;
+        }
+        .offer-card:hover {
+            border-color: var(--accent-color);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+        }
+        .offer-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Golden<span>Palm</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="rooms.html">Rooms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="packages.html">Day Out Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="auth.html">Login / Register</a></li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0"><a class="btn btn-primary" href="rooms.html">Book Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-5 bg-light border-bottom text-center">
+        <div class="container py-4">
+            <h1 class="display-5 fw-bold" style="font-family: var(--font-heading);">Rooms & Suites</h1>
+            <p class="text-muted lead">Luxurious accommodation for a perfect stay.</p>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+
+
+            <!-- Room 1 -->
+            <div class="row align-items-center room-row room-card-wrapper" data-type="standard" data-price="low">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="images/facade_1.jpg" alt="Deluxe Sea View Room" class="room-img">
+                </div>
+                <div class="col-lg-5 offset-lg-1 room-details">
+                    <h3>Deluxe Sea View Room</h3>
+                    <div class="row mt-4">
+                        <div class="col-sm-6">
+                            <p class="text-muted mb-2 fw-bold text-uppercase small">Facilities</p>
+                            <ul class="room-facilities-list">
+                                <li>King Size Bed</li>
+                                <li>Sea View Balcony</li>
+                                <li>Free WiFi</li>
+                                <li>Breakfast Included</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="price-label">Price</div>
+                            <div class="price-value">LKR 16,000</div>
+                            <small class="text-muted d-block mt-1 mb-4">per night</small>
+                            <a href="contact.html" class="btn btn-outline-dark fw-bold px-4 py-2 w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Room 2 -->
+            <div class="row align-items-center room-row room-card-wrapper" data-type="suite" data-price="high">
+                <div class="col-lg-6 mb-4 mb-lg-0 order-lg-2">
+                    <img src="images/sea_view_room.jpg" alt="Family Suite" class="room-img">
+                </div>
+                <div class="col-lg-5 room-details order-lg-1">
+                    <h3>Family Suite</h3>
+                    <div class="row mt-4">
+                        <div class="col-sm-6">
+                            <p class="text-muted mb-2 fw-bold text-uppercase small">Facilities</p>
+                            <ul class="room-facilities-list">
+                                <li>2 Queen Beds</li>
+                                <li>Living Area</li>
+                                <li>Free WiFi</li>
+                                <li>Pool View</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="price-label">Price</div>
+                            <div class="price-value">LKR 25,000</div>
+                            <small class="text-muted d-block mt-1 mb-4">per night</small>
+                            <a href="contact.html" class="btn btn-outline-dark fw-bold px-4 py-2 w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Room 3 (Additional for filtering variety) -->
+            <div class="row align-items-center room-row room-card-wrapper" data-type="suite" data-price="high">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="images/presidential_suite.jpg" alt="Presidential Suite" class="room-img">
+                </div>
+                <div class="col-lg-5 offset-lg-1 room-details">
+                    <h3>Presidential Suite</h3>
+                    <div class="row mt-4">
+                        <div class="col-sm-6">
+                            <p class="text-muted mb-2 fw-bold text-uppercase small">Facilities</p>
+                            <ul class="room-facilities-list">
+                                <li>Master King Bed</li>
+                                <li>Private Jacuzzi</li>
+                                <li>Lounge & Dining Bar</li>
+                                <li>Ocean Front</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="price-label">Price</div>
+                            <div class="price-value">LKR 45,000</div>
+                            <small class="text-muted d-block mt-1 mb-4">per night</small>
+                            <a href="contact.html" class="btn btn-outline-dark fw-bold px-4 py-2 w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SPECIAL OFFERS SECTION -->
+            <div class="mt-5 pt-5">
+                <h2 class="section-title text-start mb-5">Standard Rooms Offers</h2>
+                <div class="row g-4">
+                    <!-- Offer 1 -->
+                    <div class="col-md-3">
+                        <div class="offer-card">
+                            <i class="bi bi-tag-fill offer-icon"></i>
+                            <h5 class="fw-bold mb-3">Early Bird Offer</h5>
+                            <p class="text-muted small mb-4">15% Discount for bookings made 14 days in advance.<br><br>Free breakfast included.</p>
+                            <a href="contact.html" class="btn btn-outline-dark fw-bold w-100 mt-auto">Book Now</a>
+                        </div>
+                    </div>
+                    <!-- Offer 2 -->
+                    <div class="col-md-3">
+                        <div class="offer-card">
+                            <i class="bi bi-moon-stars-fill offer-icon"></i>
+                            <h5 class="fw-bold mb-3">Stay 2 Nights</h5>
+                            <p class="text-muted small mb-4">Stay two nights and get 20% off on the 3rd night.<br><br>Late checkout.</p>
+                            <a href="contact.html" class="btn btn-outline-dark fw-bold w-100 mt-auto">Book Now</a>
+                        </div>
+                    </div>
+                    <!-- Offer 3 -->
+                    <div class="col-md-3">
+                        <div class="offer-card">
+                            <i class="bi bi-people-fill offer-icon"></i>
+                            <h5 class="fw-bold mb-3">Family Holiday Offer</h5>
+                            <p class="text-muted small mb-4">Kids under 5 stay free.<br>Free extra bed.<br>Free swimming pool access.<br>Free kids' play area access.</p>
+                            <a href="contact.html" class="btn btn-outline-dark fw-bold w-100 mt-auto">Book Now</a>
+                        </div>
+                    </div>
+                    <!-- Offer 4 -->
+                    <div class="col-md-3">
+                        <div class="offer-card">
+                            <i class="bi bi-brightness-high-fill offer-icon"></i>
+                            <h5 class="fw-bold mb-3">Summer Special Offer</h5>
+                            <p class="text-muted small mb-3">Valid: April - August<br><br>Free breakfast for 2.<br>Free swimming pool access.<br>Late checkout.<br>Welcome drink.</p>
+                            <a href="contact.html" class="btn btn-outline-dark fw-bold w-100 mt-auto">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+     <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="index.html" class="footer-logo">Golden<span>Palm</span></a>
+                <div class="footer-nav">
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="rooms.html">Rooms</a>
+                    <a href="packages.html">Packages</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    &copy; 2026 Golden Palm Resort. All rights reserved.
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

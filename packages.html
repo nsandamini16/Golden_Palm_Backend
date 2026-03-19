@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Out Packages - Golden Palm Resort</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        .package-card {
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+        .package-card:hover {
+            border-color: var(--accent-color);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+        }
+        .price-text {
+            font-size: 2.5rem;
+            font-weight: 700;
+            font-family: var(--font-heading);
+            color: var(--text-dark);
+        }
+        .package-features {
+            list-style: none;
+            padding: 0;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        .package-features li {
+            position: relative;
+            padding-left: 2rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        .package-features li i {
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: var(--accent-color);
+        }
+        .pool-table-wrapper {
+            background-color: var(--bg-light);
+            padding: 4rem;
+            border-radius: 12px;
+        }
+        .pool-table {
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .pool-table-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+            font-weight: 600;
+            font-size: 1.1rem;
+            align-items: center;
+        }
+        .pool-table-row:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Golden<span>Palm</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="packages.html">Day Out Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="auth.html">Login / Register</a></li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0"><a class="btn btn-primary" href="rooms.html">Book Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-5 bg-light border-bottom text-center">
+        <div class="container py-4">
+            <h1 class="display-5 fw-bold" style="font-family: var(--font-heading);">Day Out Packages</h1>
+            <p class="text-muted lead">Perfect day getaways for family and friends.</p>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <!-- Standard Package -->
+                <div class="col-lg-5">
+                    <div class="card package-card h-100 p-4 p-md-5">
+                        <div class="mb-4 border-bottom pb-4 text-center text-sm-start">
+                            <h3 class="fw-bold m-0 mb-2">Standard Day Out</h3>
+                            <div class="price-text">LKR 4,500</div>
+                        </div>
+                        <p class="text-muted small fw-bold text-uppercase tracking-wider">Includes:</p>
+                        <ul class="package-features">
+                            <li><i class="bi bi-check-lg"></i> Welcome Drink</li>
+                            <li><i class="bi bi-check-lg"></i> Free WiFi</li>
+                            <li><i class="bi bi-check-lg"></i> Lunch buffet</li>
+                            <li><i class="bi bi-check-lg"></i> Pool Access</li>
+                        </ul>
+                        <div class="mt-auto pt-4">
+                            <a href="contact.html" class="btn btn-dark w-100 py-3 fw-bold">Book Day Out Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium Package -->
+                <div class="col-lg-5">
+                    <div class="card package-card h-100 p-4 p-md-5">
+                        <div class="mb-4 border-bottom pb-4 text-center text-sm-start">
+                            <h3 class="fw-bold m-0 mb-2">Premium Day Out</h3>
+                            <div class="price-text">LKR 6,500</div>
+                        </div>
+                        <p class="text-muted small fw-bold text-uppercase tracking-wider">Includes:</p>
+                        <ul class="package-features">
+                            <li><i class="bi bi-check-lg"></i> Breakfast</li>
+                            <li><i class="bi bi-check-lg"></i> Evening Tea</li>
+                            <li><i class="bi bi-check-lg"></i> Lunch</li>
+                            <li><i class="bi bi-check-lg"></i> Pool Access</li>
+                            <li><i class="bi bi-check-lg"></i> Gym Access</li>
+                        </ul>
+                        <div class="mt-auto pt-4">
+                            <a href="contact.html" class="btn btn-dark w-100 py-3 fw-bold">Book Day Out Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-5 pt-5">
+                <h2 class="section-title">Pool Access Prices</h2>
+                <div class="pool-table-wrapper mt-5">
+                    <div class="pool-table">
+                        <div class="pool-table-row">
+                            <span>Adults</span>
+                            <span>LKR 2,000</span>
+                        </div>
+                        <div class="pool-table-row">
+                            <span>Children</span>
+                            <span>LKR 1,200</span>
+                        </div>
+                        <div class="pool-table-row">
+                            <span>Pool + Lunch</span>
+                            <span>LKR 3,500</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="index.html" class="footer-logo">Golden<span>Palm</span></a>
+                <div class="footer-nav">
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="rooms.html">Rooms</a>
+                    <a href="packages.html">Packages</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    &copy; 2026 Golden Palm Resort. All rights reserved.
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
